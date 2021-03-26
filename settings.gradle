@@ -1,3 +1,2 @@
 include ':SdkAar'
-include ':app'
 rootProject.name = "SdkAar"
