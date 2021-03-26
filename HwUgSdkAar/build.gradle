@@ -44,8 +44,8 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    implementation(name: 'blesupport-release', ext: 'aar')
-    implementation(name: 'pentabletinterfacelibrary-release', ext: 'aar')
-    implementation(name: 'UsbUtilLibrary-release', ext: 'aar')
+    api (name: 'blesupport-release', ext: 'aar')
+    api (name: 'pentabletinterfacelibrary-release', ext: 'aar')
+    api (name: 'UsbUtilLibrary-release', ext: 'aar')
 
 }
