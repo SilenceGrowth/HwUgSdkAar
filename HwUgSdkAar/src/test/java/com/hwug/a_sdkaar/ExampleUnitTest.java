@@ -1,4 +1,4 @@
-package com.hwug.sdkaar;
+package com.hwug.a_sdkaar;
 
 import org.junit.Test;
 
