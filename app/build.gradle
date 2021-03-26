@@ -1,7 +1,4 @@
-plugins {
-    id 'com.android.application'
-}
-
+apply plugin:'com.android.application'
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -26,14 +23,23 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+        mavenCentral()
+    }
 }
 
 dependencies {
-
+    implementation fileTree(include:['*.jar'],dir:'libs')
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.2.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
-    testImplementation 'junit:junit:4.+'
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'com.github.SilenceGrowth:SdkAar:1.1.1'
+//    implementation 'com.squareup.okhttp3:okhttp:4.4.1'
 }
