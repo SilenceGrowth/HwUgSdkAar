@@ -45,7 +45,8 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
     //底层库
 //    api (name: 'blesupport-release', ext: 'aar')
-    api (name: 'pentabletinterfacelibrary-release', ext: 'aar')
+//    api (name: 'pentabletinterfacelibrary-release', ext: 'aar')
 
     api files('libs/blesupport-release.jar')
+    api files('libs/pentabletinterfacelibrary-release.jar')
 }
